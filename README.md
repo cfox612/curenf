@@ -1,2 +1,3 @@
 # curenf
-CureNFwithJack redesign mock
+
+Initial commit for CureNFwithJack redesign. 

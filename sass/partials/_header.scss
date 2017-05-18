@@ -1,0 +1,80 @@
+/* header css */
+
+.social-top {
+  background: #212121;
+  padding: 15px;
+  color: #efefef;
+  font-size: 14px;
+  ul {
+    li {
+      display: inline-block;
+      text-align: center;
+      margin-top: 10px;
+      &:first-child {
+        border-right: 1px solid #ccc;
+      }
+      .fa {
+        width: 50px;
+        font-size: 16px;
+        color: $white;
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+  a {
+    color: #efefef;
+  }
+  .pull-left {
+    padding-top: 13px;
+  }
+  .pull-right {
+    &.donate-btn-mobile {
+      display: none;
+      @media #{$bp-mobile} {
+        display: block;
+        clear: both;
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+      .btn-menu {
+        color: $white;
+        background: $secondary;
+        border: none;
+        border-radius: 0;
+        padding: 10px 20px;
+        &:hover {
+          color: $white;
+          background-color: $primary;
+        }
+        @media #{$bp-mobile} {
+          padding: 10px 20px;
+          font-size: 24px;
+          margin: 20px 0 10px;
+          background: $secondary;
+          color: $white;
+          display: block;
+        }
+      }
+    }
+    &.donate-btn-desktop {
+      display: block;
+      @media #{$bp-mobile} {
+        display: none;
+      }
+      .btn-menu {
+        color: $white;
+        background: $secondary;
+        border: none;
+        border-radius: 0;
+        padding: 10px 20px;
+        &:hover {
+          color: $white;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}

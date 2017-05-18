@@ -1,0 +1,31 @@
+/* base css */
+
+$primary: #184174;
+$secondary: #83b937;
+$black: #000;
+$darker-gray: #222;
+$dark-gray: #444;
+$gray: #777;
+$light-gray: #aaa;
+$lighter-gray: #ccc;
+$lightest-gray: #e7e7e7;
+$white: #fff;
+
+
+@mixin fade-in-out($time) {
+  transition: opacity $time ease-in-out;
+  -moz-transition: opacity $time ease-in-out;
+  -webkit-transition: opacity $time ease-in-out;
+  -o-transition: opacity $time ease-in-out;
+}
+
+//media breakpoints
+$breakpoint-mobile:    767px;
+$breakpoint-tablet:   992px;
+$breakpoint-desktop:  1200px;
+$bp-mobile: "(max-width : 767px)";
+$bp-tablet: "(max-width : 992px)";
+$bp-desktop: "(max-width : 1200px)";
+$bp-gt-mobile: "(min-width : 768px)";
+$bp-gt-tablet: "(min-width : 993px)";
+$bp-gt-desktop: "(min-width : 1201px)";
